@@ -1,0 +1,44 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+// fonts
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+*,::after,::before {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+}
+
+li,ul {
+    list-style-type: none;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+        color: unset;
+    }
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+//blocks
+@import 'blocks/promo';
+@import 'blocks/feature';
+@import 'blocks/products';
+@import 'blocks/video';
+@import 'blocks/reviews';
+@import 'blocks/footer';
+@import 'blocks/media';

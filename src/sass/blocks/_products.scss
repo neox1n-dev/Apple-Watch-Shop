@@ -1,0 +1,96 @@
+.products {
+    margin-top: 95px;
+    &__subtitle {
+        display: flex;
+        align-items: center;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #1617DB;
+        img {
+            margin-right: 10px;
+        }
+    }
+    &__title {
+        margin-top: 12px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 51px;
+        color: #01010D;
+    }
+    &__descr {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #01010D;
+        width: 485px;
+        margin-top: 25px;
+    }
+    &__wrapper {
+        margin-top: 70px;
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(auto-fill, 312px);
+        grid-template-rows: 390px;
+        row-gap: 45px;
+    }
+    &__item {
+        &:nth-child(1) {
+            background: #F8D7D9;
+        }
+        &:nth-child(2) {
+            background: #D6D7DB;
+        }
+        &:nth-child(3) {
+            background: #DCD2D4;
+        }
+        border: 1px solid #CCCCCC;
+        border-radius: 60px;
+        position: relative;
+        overflow: hidden;
+    }
+    &__plus {
+        cursor: pointer;
+        width: 144px;
+        height: 144px;
+        position: absolute;
+        background: #F3F3F5;
+        left: -60px;
+        bottom: -60px;
+        border-radius: 100%;
+        & svg {
+            position: absolute;
+            right: 41px;
+            top: 33px;
+            width: 14px;
+            height: 14px;
+            z-index: 3;
+        }
+    }
+    &__block {
+        height: fit-content;
+        padding: 4px;
+        border: 3px solid #CCCCCC;
+        border-radius: 64px;
+        &:nth-child(1) {
+            & .products__item {
+                background: #F8D7D9;
+            }
+        }
+        &:nth-child(2) {
+            & .products__item {
+                background: #D6D7DB;
+            }
+        }
+        &:nth-child(3) {
+            & .products__item {
+                background: #DCD2D4;
+            }
+        }
+    }
+}
